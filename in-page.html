@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tilu App</title>
+
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="assets/image/logo.svg" alt="logo">
+            </a>
+
+            <!-- BURGER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                <ul class="navbar-nav gap-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#platform">Platform</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stories">Success Stories</a>
+                    </li>
+
+                    <li class="nav-item d-lg-none mt-3">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </li>
+
+                    <li class="nav-item d-lg-none mt-2">
+                        <a href="#" class="btn btn-dark rounded-pill px-4 w-100">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+
+                <a href="#" class="nav-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </a>
+
+                <a href="#" class="btn btn-dark rounded-pill px-4">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- MODAL -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+
+            <div class="modal-content border-0 overflow-hidden rounded-5">
+
+                <div class="row g-0">
+
+                    <!-- LEFT -->
+                    <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+
+                        <!-- LOGO -->
+                        <img src="assets/image/logo.svg" width="70" class="mb-5" alt="">
+
+                        <h2 class="fw-bold mb-5">
+                            Tilu-ге қош келдіңіз
+                        </h2>
+
+                        <!-- INPUT -->
+                        <div class="mb-4">
+
+                            <label class="form-label text-secondary">
+                                Телефон
+                            </label>
+
+                            <input type="text" class="form-control form-control-lg rounded-4"
+                                placeholder="+7 771 000 9998">
+
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="mb-4">
+
+                            <label class="form-label text-secondary">
+                                Құпиясөз
+                            </label>
+
+                            <input type="password" class="form-control form-control-lg rounded-4"
+                                placeholder="••••••••">
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <button class="btn btn-primary btn-lg rounded-4 py-3">
+                            Кіру
+                        </button>
+
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-lg-6 d-none d-lg-block">
+
+                        <div class="h-100 modal-right">
+
+                            <img src="assets/image/login.png" class="w-100 h-100 object-fit-cover" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <section class="ubegin">
+            <div class="container">
+
+                <div class="badge reveal">
+                    <span class="dot"></span>
+                    New Cohort Starting Soon
+                </div>
+
+                <h2>uBegin</h2>
+
+                <p>
+                    uBoost - a course where you progress every week with a meaningful
+                    boost in your skills from fluent speaking to strong writing and
+                    listening/reading comprehension.
+                </p>
+
+                <div class="video-box reveal">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/IsLtPbXq4gc?list=RDIsLtPbXq4gc"
+                        title="Kalifarniya &amp; Kairat Nurtas - Ademi [Official Performance Video]" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="english-level">
+            <div class="container">
+
+                <!-- LEFT -->
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="left-content">
+
+                            <h2 class="reveal">
+                                Take your English to the next level
+                            </h2>
+
+                            <p class="description reveal">
+                                The course helps you speak more freely, express thoughts on complex topics,
+                                grow your vocabulary, and use English fluently at work, in studies,
+                                and in everyday life.
+                            </p>
+
+                            <div class="cards">
+
+                                <div class="card reveal">
+                                    <div class="icon">
+                                        <img src="./images/icon-1.svg" alt="">
+                                    </div>
+
+                                    <h3>30 Self-Study Lessons</h3>
+
+                                    <p>
+                                        Short videos, interactive practice
+                                        <br>
+                                        (2x/week)
+                                    </p>
+                                </div>
+
+                                <div class="card reveal">
+                                    <div class="icon">
+                                        <img src="./images/icon-2.svg" alt="">
+                                    </div>
+
+                                    <h3>30 Live Online Lessons</h3>
+
+                                    <p>
+                                        Speaking practice with a teacher
+                                        <br>
+                                        (2x/week)
+                                    </p>
+                                </div>
+
+                                <div class="card reveal">
+                                    <div class="icon">
+                                        <img src="./images/icon-3.svg" alt="">
+                                    </div>
+
+                                    <h3>Weekly Grammar Review</h3>
+
+                                    <p>
+                                        Deeper understanding and practice
+                                    </p>
+                                </div>
+
+                                <div class="card reveal">
+                                    <div class="icon">
+                                        <img src="./images/icon-4.svg" alt="">
+                                    </div>
+
+                                    <h3>15 Topic-Based Modules</h3>
+
+                                    <p>
+                                        Culture, science, social issues
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- RIGHT -->
+                        <div class="course-card reveal">
+
+                            <div class="course-top">
+
+                                <div class="logo-box">
+                                    <img src="https://framerusercontent.com/images/7HL32ZWJHiRCpZ4GhKKc8Hr35s0.png?width=500&height=500"
+                                        alt="">
+                                </div>
+
+                                <div class="course-top-text">
+                                    <h3>uBegin</h3>
+                                    <span>Full Access</span>
+                                </div>
+
+                            </div>
+
+                            <div class="course-info">
+
+                                <div class="info-row">
+                                    <span>Duration</span>
+                                    <strong>15 Weeks</strong>
+                                </div>
+
+                                <div class="info-row">
+                                    <span>Level</span>
+                                    <strong>B1 - B2</strong>
+                                </div>
+
+                                <div class="info-row">
+                                    <span>Format</span>
+                                    <strong>Live + Platform</strong>
+                                </div>
+
+                            </div>
+
+                            <div class="includes">
+
+                                <h4>Includes:</h4>
+
+                                <ul>
+                                    <li>30 Live Lessons</li>
+                                    <li>30 Self-Study Modules</li>
+                                    <li>Weekly Grammar Review</li>
+                                    <li>Certificate of Completion</li>
+                                </ul>
+
+                            </div>
+
+                            <button>Enroll now</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="course-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <!-- CURRICULUM -->
+                        <div class="curriculum">
+
+                            <div class="section-head reveal">
+                                <h2>Course Curriculum</h2>
+                                <span>15 Modules • 60 Lessons</span>
+                            </div>
+
+                            <div class="curriculum-list reveal">
+
+                                <div class="curriculum-item">
+
+                                    <div class="number">1</div>
+
+                                    <div class="content">
+                                        <div class="top">
+                                            <h3>Topic-Based Modules</h3>
+                                            <a href="#">15 Topics</a>
+                                        </div>
+
+                                        <p>
+                                            From everyday topics to culture, science, and social issues.
+                                            Learn to discuss complex themes with confidence.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="curriculum-item reveal">
+
+                                    <div class="number">2</div>
+
+                                    <div class="content">
+                                        <div class="top">
+                                            <h3>B1–B2 Grammar</h3>
+                                            <a href="#">Detailed Review</a>
+                                        </div>
+
+                                        <p>
+                                            Verb tenses & Conditionals: Passive voice & Participles:
+                                            Reported speech.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="curriculum-item reveal">
+
+                                    <div class="number">3</div>
+
+                                    <div class="content">
+                                        <div class="top">
+                                            <h3>Real-Life Scenarios</h3>
+                                            <a href="#">Practical Skills</a>
+                                        </div>
+
+                                        <p>
+                                            Practical application including budgeting habits,
+                                            basic first aid, and everyday problem solving in English.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- WHO -->
+                        <div class="who-course">
+
+                            <h2>Who should take this course?</h2>
+
+                            <div class="row g-4">
+
+                                <div class="col-md-4 reveal">
+                                    <div class="who-card">
+
+                                        <div class="icon">
+                                            <img src="./images/icon-1.svg" alt="">
+                                        </div>
+
+                                        <h3>Level Up Learners</h3>
+
+                                        <p>
+                                            For those who already communicate in English
+                                            and are ready to reach Upper-Intermediate.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 reveal">
+                                    <div class="who-card">
+
+                                        <div class="icon">
+                                            <img src="./images/icon-2.svg" alt="">
+                                        </div>
+
+                                        <h3>IELTS Prep</h3>
+
+                                        <p>
+                                            Builds a strong foundation for IELTS preparation
+                                            with structured grammar and vocab.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 reveal">
+                                    <div class="who-card">
+
+                                        <div class="icon">
+                                            <img src="./images/icon-3.svg" alt="">
+                                        </div>
+
+                                        <h3>Fluent Speakers</h3>
+
+                                        <p>
+                                            Speak more freely, express thoughts on complex topics,
+                                            and grow your vocabulary.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- AFTER -->
+                        <div class="after-course">
+
+                            <h2 class="reveal">After the course you can:</h2>
+
+                            <div class="skills">
+
+                                <div class="skill-item reveal">
+                                    Communicate at A2–B2 level
+                                </div>
+
+                                <div class="skill-item reveal">
+                                    Express ideas clearly and structured
+                                </div>
+
+                                <div class="skill-item reveal">
+                                    Use new vocabulary in food, travel, work
+                                </div>
+
+                                <div class="skill-item reveal">
+                                    Improve pronunciation & intonation
+                                </div>
+
+                                <div class="skill-item reveal">
+                                    Discuss cultural & global topics
+                                </div>
+
+                                <div class="skill-item reveal">
+                                    Feel confident in conversations
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stories" id="stories">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="team_badge">🎯 We make results</span>
+                    <h2> Stories of our students</h2>
+                    <p>From leadership to the classroom, we collaborate daily to uphold our standards.</p>
+                </div>
+                <div class="row">
+
+                    <!-- LEFT -->
+                    <div class="col-md-3">
+                        <div class="nav flex-column nav-pills grey-box">
+
+                            <button class="nav-link active student-tab" data-bs-toggle="pill" data-bs-target="#s1">
+                                <img
+                                    src="https://framerusercontent.com/images/QFmcsM94IubGt3np1oQ2AMvJyg.png?scale-down-to=512&width=1592&height=1576">
+                                <div>
+                                    <strong>Aizhan B.</strong>
+                                    <small>Pre → Upper</small>
+                                </div>
+                            </button>
+
+                            <button class="nav-link student-tab" data-bs-toggle="pill" data-bs-target="#s2">
+                                <img
+                                    src="https://framerusercontent.com/images/QFmcsM94IubGt3np1oQ2AMvJyg.png?scale-down-to=512&width=1592&height=1576">
+                                <div>
+                                    <strong>Sogdiana B.</strong>
+                                    <small>Beginner → Upper</small>
+                                </div>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-md-9">
+                        <div class="tab-content">
+
+                            <div class="tab-pane fade show active" id="s1">
+                                <div class="row ">
+
+                                    <div class="col-md-6 reveal">
+                                        <div class="grey-box ">
+                                            <p>Пришла с уровнем Pre-Intermediate и целью сдать IELTS. Благодаря
+                                                системному
+                                                обучению
+                                                и
+                                                дисциплинированности Акжан
+                                                улучшила все свои навыки и сдала IELTS на 8 баллов.</p>
+                                        </div>
+                                        <div class="levels">
+                                            <div class="level">
+                                                <i class="icons ic-1"></i>
+                                                <div class="i-text">
+                                                    <span>Начальный уровень</span>
+                                                    <p>Pre-Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="level active">
+                                                <i class="icons ic-2"></i>
+                                                <div class="i-text">
+                                                    <span>После окончания</span>
+                                                    <p>Upper</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6 reveal">
+                                        <div class="video-box">
+                                            <iframe width="100%" height="100%"
+                                                src="https://www.youtube.com/embed/IsLtPbXq4gc?list=RDIsLtPbXq4gc"
+                                                title="Kalifarniya &amp; Kairat Nurtas - Ademi [Official Performance Video]"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="levels">
+                                            <div class="level">
+                                                <i class="icons ic-1"></i>
+                                                <div class="i-text">
+                                                    <span>IELTS Score</span>
+                                                    <p>8.0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="s2">
+                                <p>7.5 нәтижеге жетті.</p>
+                            </div>
+
+                        </div>
+                        <div class="join-team reveal">
+
+                            <img src="https://framerusercontent.com/images/XhJnoCNv4yxK2IGFXV4Tjh32hw.png?scale-down-to=512&width=560&height=536"
+                                alt="">
+
+                            <h2>Join our Team</h2>
+
+                            <p>Become a part of our team</p>
+
+                            <a href="#">See open positions</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL -->
+        <div id="videoModal" class="modal fade">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <iframe id="videoFrame" width="100%" height="400"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="reviews reveal">
+            <div class="container">
+
+                <div class="students-reviews__top">
+                    <h2>Other stories of our students</h2>
+                </div>
+
+                <div class="students-reviews__grid" id="reviewsGrid">
+
+                    <!-- CARD -->
+                    <div class="students-review-card reveal">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Zarina P.</h4>
+                                <span>Pre upper 06</span>
+                            </div>
+                        </div>
+
+                        <p>"Добрый день! Я очень рада, что прошла данный курс. Мне очень понравились уроки тем, что они
+                            очень
+                            разнообразные и
+                            охватывают все аспекты жизни. Я наконец-то научилась формировать свои мысли и уже лучше пишу
+                            эссе. Я
+                            считаю, что у меня
+                            есть прогресс, потому что по сравнению с первыми уроками я начала быстрее понимать текст и
+                            речь на
+                            английском,
+                            автоматически переводится у меня в голове😊 Особенно мне понравилось работать вместе с моим
+                            преподавателем — Гаухар! Это
+                            лучший преподаватель английского, который у меня был. Спасибо вам большое! 😍💕"
+                        </p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="students-review-card reveal">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Aynur B.</h4>
+                                <span>IELTS Group 03</span>
+                            </div>
+                        </div>
+
+                        <p>"Здравствуйте, курс в целом изменил мнение об IELTS курсах. Очень основательный,
+                            систематичный, так
+                            мозг не нагружаясь
+                            воспринимает информацию на платформе один за другим. Особенно понравились topic-related
+                            vocabulary,
+                            которые полезны во
+                            всех секциях. Огромная благодарность всей команде: преподавателям, менеджерам🥰. Приятно
+                            было
+                            поработать/позаниматься с
+                            вами в течении 3 месяцев 🤍"
+                        </p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="students-review-card reveal">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Zarina U.</h4>
+                                <span>IELTS Pair 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Сейчас у нас уроки открываются раз в два дня по одному уроку.
+                            Всё идет очень хорошо...
+                        </p>
+                    </div>
+
+
+                    <!-- HIDDEN CARDS -->
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ardak H.</h4>
+                                <span>Pre Upper 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Курс өте ұнады. Мұғалімдер әрқашан көмектесіп отырды.
+                        </p>
+                    </div>
+
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ardak H.</h4>
+                                <span>Pre Upper 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Курс өте ұнады. Мұғалімдер әрқашан көмектесіп отырды.
+                        </p>
+                    </div>
+
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ardak H.</h4>
+                                <span>Pre Upper 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Курс өте ұнады. Мұғалімдер әрқашан көмектесіп отырды.
+                        </p>
+                    </div>
+
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ardak H.</h4>
+                                <span>Pre Upper 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Курс өте ұнады. Мұғалімдер әрқашан көмектесіп отырды.
+                        </p>
+                    </div>
+
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ayna K.</h4>
+                                <span>Pre Intermediate</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            IELTS дайындық өте күшті өтті. Нәтижем айтарлықтай өсті.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- BOTTOM BADGE -->
+                <div class="students-reviews__bottom">
+                    <div class="students">
+                        <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/QFmcsM94IubGt3np1oQ2AMvJyg.png?scale-down-to=512&width=1592&height=1576"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                            alt="">
+                    </div>
+
+                    <p>10,000+ students loved Tilu</p>
+
+                    <button id="showMoreBtn">See more →</button>
+
+                    <script>
+                        const showMoreBtn = document.getElementById("showMoreBtn");
+                        const hiddenReviews = document.querySelectorAll(".hidden-review");
+                        const reviewsGrid = document.getElementById("reviewsGrid");
+
+                        let expanded = false;
+
+                        showMoreBtn.addEventListener("click", () => {
+
+                            expanded = !expanded;
+
+                            reviewsGrid.classList.toggle("expanded");
+
+                            hiddenReviews.forEach((card, index) => {
+
+                                setTimeout(() => {
+
+                                    if (expanded) {
+                                        card.classList.add("show-review");
+                                    } else {
+                                        card.classList.remove("show-review");
+                                    }
+
+                                }, index * 120);
+
+                            });
+
+                            showMoreBtn.innerText = expanded
+                                ? "Hide reviews"
+                                : "See more →";
+
+                        });
+                    </script>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="journey-section reveal">
+
+            <div class="journey-section__box">
+
+                <!-- TOP CARDS -->
+                <div class="journey-section__cards reveal">
+
+                    <div class="journey-card">
+                        <img src="https://framerusercontent.com/images/NbYnPKcJU6jnDnZNpzELCjLAk.png?width=1440&height=1363"
+                            alt="">
+                        <span>Guest from Stanford</span>
+                    </div>
+
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/eET0Fa0I14kCLn7EyagGIDLp610.png?width=1040&height=732"
+                            alt="">
+                        <span>Graduation superstars</span>
+                    </div>
+
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/BNg8wWkrkoKhnxk0ByYxBhYqo.png?width=524&height=458"
+                            alt="">
+                        <span>Tilu Team 🥰</span>
+                    </div>
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/mFu7NsP6f4FaTllkVL2P0bAMvo.png?width=1440&height=1919"
+                            alt="">
+                        <span>Guest from Stanford</span>
+                    </div>
+
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/tHG2ITkTf4xMEtP0ThRv4qCVPVY.png?width=640&height=660"
+                            alt="">
+                        <span>Graduation superstars</span>
+                    </div>
+
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/BNg8wWkrkoKhnxk0ByYxBhYqo.png?width=524&height=458"
+                            alt="">
+                        <span>Tilu Team 🥰</span>
+                    </div>
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/BNg8wWkrkoKhnxk0ByYxBhYqo.png?width=524&height=458"
+                            alt="">
+                        <span>Graduation 2026</span>
+                    </div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="journey-section__content reveal">
+
+                    <h2>Ready to get started</h2>
+
+                    <p>
+                        Start your learning journey with Tilu
+                    </p>
+
+                    <button>Contact Us</button>
+
+                </div>
+
+            </div>
+
+            <!-- DARK PART -->
+            <div class="journey-section__dark"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__top">
+
+                <!-- LEFT -->
+                <div class="footer__left">
+
+                    <img src="assets/image/logo.svg" alt="Tilu">
+
+                    <p>
+                        Онлайн-школа английского языка Асель Амангелды.
+                        <br>
+                        ИП Асел Амангелды, ИИН 980519400566
+                        Казахстан, 010000,
+                        <br>
+                        г. Астана, район Есиль, ул. Достык, д.18
+                        +77002077117
+                    </p>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="footer__right">
+
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Blog</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+
+                <span>© 2025 — All rights reserved.</span>
+
+                <a href="#">Privacy policy</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

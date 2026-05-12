@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tilu App</title>
+
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="assets/image/logo.svg" alt="logo">
+            </a>
+
+            <!-- BURGER -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+                <ul class="navbar-nav gap-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#platform">Platform</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stories">Success Stories</a>
+                    </li>
+
+                    <li class="nav-item d-lg-none mt-3">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </li>
+
+                    <li class="nav-item d-lg-none mt-2">
+                        <a href="#" class="btn btn-dark rounded-pill px-4 w-100">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+
+                <a href="#" class="nav-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </a>
+
+                <a href="#" class="btn btn-dark rounded-pill px-4">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- MODAL -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+
+            <div class="modal-content border-0 overflow-hidden rounded-5">
+
+                <div class="row g-0">
+
+                    <!-- LEFT -->
+                    <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+
+                        <!-- LOGO -->
+                        <img src="assets/image/logo.svg" width="70" class="mb-5" alt="">
+
+                        <h2 class="fw-bold mb-5">
+                            Tilu-ге қош келдіңіз
+                        </h2>
+
+                        <!-- INPUT -->
+                        <div class="mb-4">
+
+                            <label class="form-label text-secondary">
+                                Телефон
+                            </label>
+
+                            <input type="text" class="form-control form-control-lg rounded-4"
+                                placeholder="+7 771 000 9998">
+
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="mb-4">
+
+                            <label class="form-label text-secondary">
+                                Құпиясөз
+                            </label>
+
+                            <input type="password" class="form-control form-control-lg rounded-4"
+                                placeholder="••••••••">
+
+                        </div>
+
+                        <!-- BUTTON -->
+                        <button class="btn btn-primary btn-lg rounded-4 py-3">
+                            Кіру
+                        </button>
+
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-lg-6 d-none d-lg-block">
+
+                        <div class="h-100 modal-right">
+
+                            <img src="assets/image/login.png" class="w-100 h-100 object-fit-cover" alt="">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <main>
+
+        <section class="hero-section d-flex align-items-center text-center text-lg-start">
+            <div class="bg-hero"></div>
+            <div class="bg-hero2"></div>
+            <div class="container ">
+                <div class="row align-items-center">
+
+                    <!-- LEFT TEXT -->
+                    <div class="col-lg-6">
+
+                        <h1 class="display-5 fw-bold mb-3 reveal">
+                            Online English
+                            language school
+                        </h1>
+
+                        <p class="lead mb-4 reveal">
+                            Start speaking from the very first lesson with high-quality instruction, meaningful content
+                            and
+                            engaging technology that
+                            accelerates progress.
+                        </p>
+
+                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start reveal">
+                            <a href="#" class="btn btn-dark btn-lg rounded-pill px-4">
+                                Contact Us
+                            </a>
+
+                            <a href="#" class="btn btn-outline-dark btn-lg rounded-pill px-4">
+                                Our Curses
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT IMAGE -->
+                    <div class="col-lg-6 mt-5 mt-lg-0 text-center reveal">
+                        <img src="assets/image/img_big.png" class="img-fluid" alt="hero image">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+
+                <div class="text-center mb-6">
+                    <h4 class="tilte-fea">Our students received invitations from</h4>
+                </div>
+
+                <div class="logo-marquee reveal">
+                    <div class="logo-track">
+
+                        <img src="https://framerusercontent.com/images/EuPbGUAqr3ThDd2xtYCsLOBdU.png?scale-down-to=512&width=1272&height=850 512w,https://framerusercontent.com/images/EuPbGUAqr3ThDd2xtYCsLOBdU.png?scale-down-to=1024&width=1272&height=850 1024w,https://framerusercontent.com/images/EuPbGUAqr3ThDd2xtYCsLOBdU.png?width=1272&height=850 1272w"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/YTuVH57rndN2HX1i4BYXgPi8sYs.png?width=118&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/XaIW4kzxIXUWZ0vJxPbVdeBuVY.png?width=90&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/F0uOZDVuFikwh2EvQvbPJ3kOFc.png?width=119&height=83"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/3JZJ6u9VYqLeV3GFKAjQsEibsg.png?width=190&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/Q7xisEcePqk5EgPmmgam5qxMA9s.png?width=135&height=89"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/dp6OnaNxhSOtsSrkYrnEU1Egg.png?width=90&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/3xusLc4UCUoMLksdzZqSGxAx04.png?width=110&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/EuPbGUAqr3ThDd2xtYCsLOBdU.png?scale-down-to=512&width=1272&height=850 512w,https://framerusercontent.com/images/EuPbGUAqr3ThDd2xtYCsLOBdU.png?scale-down-to=1024&width=1272&height=850 1024w,https://framerusercontent.com/images/EuPbGUAqr3ThDd2xtYCsLOBdU.png?width=1272&height=850 1272w"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/YTuVH57rndN2HX1i4BYXgPi8sYs.png?width=118&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/XaIW4kzxIXUWZ0vJxPbVdeBuVY.png?width=90&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/F0uOZDVuFikwh2EvQvbPJ3kOFc.png?width=119&height=83"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/3JZJ6u9VYqLeV3GFKAjQsEibsg.png?width=190&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/Q7xisEcePqk5EgPmmgam5qxMA9s.png?width=135&height=89"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/dp6OnaNxhSOtsSrkYrnEU1Egg.png?width=90&height=90"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/3xusLc4UCUoMLksdzZqSGxAx04.png?width=110&height=90"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="impact-section">
+
+            <div class="impact-section__wrapper">
+
+                <!-- BADGE -->
+                <div class="impact-section__badge ">
+                    🎯 Our Impact
+                </div>
+
+                <!-- FLOATING IMAGES -->
+                <div class="impact-avatar avatar-1">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-2">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-3">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-4">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-5">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-6">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-7">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-8">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-9">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <div class="impact-avatar avatar-10">
+                    <img src="https://framerusercontent.com/images/jLj7vdUYrvDu2Y6RyMLE67euzr8.jpeg?width=498&height=498"
+                        alt="">
+                </div>
+
+                <!-- CONTENT -->
+                <div class="impact-section__content">
+
+                    <h2>
+                        15,000+ students <br>
+                        from 20 countries <br>
+                        200+ teachers <br>
+                        4.9 satisfaction rate
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="courses" id="courses">
+            <div class="container">
+
+                <!-- TITLE -->
+                <div class="courses__header text-center ">
+                    <span class="courses__badge">⭐️ Learning Paths</span>
+                    <h1 class="courses__title ">Find Your Perfect Course</h2>
+                        <p class="courses__subtitle">
+                            Master English with flipped-classroom method. Focus on real-world speaking practice
+                            in private or group sessions.
+                        </p>
+                </div>
+
+                <!-- CARDS -->
+                <div class="courses__grid">
+
+                    <!-- CARD 1 -->
+                    <div class="course-card reveal">
+                        <div class="course-card__image blue">
+                            <img src="https://framerusercontent.com/images/7HL32ZWJHiRCpZ4GhKKc8Hr35s0.png?width=500&height=500"
+                                alt="">
+                        </div>
+                        <div class="course-card__content ">
+                            <h5>uBegin (A0)</h5>
+                            <p class="course-card_time">5 месяцев • 5 раз в неделю</p>
+                            <p>Learn to read, understand basic texts, and use essential phrases.</p>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="course-card reveal">
+                        <div class="course-card__image dark">
+                            <img src="https://framerusercontent.com/images/NVsFjJ3kN2hMAqcpxvuuMRp8TBU.png?width=500&height=500"
+                                alt="">
+                        </div>
+                        <div class="course-card__content">
+                            <h5>uGrow (A1-A2)</h5>
+                            <p class="course-card_time">5 месяцев • 5 раз в неделю</p>
+                            <p>Speak freely about everyday life and build confidence.</p>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="course-card reveal">
+                        <div class="course-card__image pink">
+                            <img src="https://framerusercontent.com/images/ywFJLplmRMcRWUN6HxPHYgicEw.png?width=500&height=500"
+                                alt="">
+                        </div>
+                        <div class="course-card__content">
+                            <h5>uBoost (A2-B2)</h5>
+                            <p class="course-card_time">5 месяцев • 5 раз в неделю</p>
+                            <p>Express complex ideas and achieve fluency for work.</p>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="course-card reveal">
+                        <div class="course-card__image red">
+                            <img src="https://framerusercontent.com/images/IQ8NEMmZKdt9u7p9zLoaol6f0N8.png?width=500&height=500"
+                                alt="">
+                        </div>
+                        <div class="course-card__content">
+                            <h5>IELTS Bootcamp</h5>
+                            <p class="course-card_time">5 месяцев • 5 раз в неделю</p>
+                            <p>Practice with real IELTS tasks and get feedback.</p>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+
+                <div class="about__content">
+
+                    <!-- badge -->
+                    <span class="about__badge">💻 Our platform</span>
+
+                    <!-- text -->
+                    <p class="about__text reveal">
+                        <span>We built our curriculum on learning science
+                            to focus on real progress, not just theory</span>
+                        <img src="http://framerusercontent.com/images/AzEaZkSaNXdlPaVK2Eec7R8IL0w.png?width=208&height=208"
+                            alt="">
+                        <span>Instead of generic grades, you get personalized feedback</span>
+                        <img src="https://framerusercontent.com/images/6QsQBxv5Q4kntONevtXZicMp5Ck.png?width=752&height=962"
+                            alt="">
+                        <span>that actively guides your improvement.</span>
+                    </p>
+                    <p class="about__text reveal"><span>Our team</span> <img
+                            src="https://framerusercontent.com/images/sNeVDuZbI69rKGnPmVaU3fyxY.png?scale-down-to=512&width=812&height=812"
+                            alt="">
+                        <span>provides the constant mentorship and emotional support you need.
+                            It’s a safe space</span> <img
+                            src="https://framerusercontent.com/images/UK1BvsLp3gztuzxhWrXcScozFA.png?scale-down-to=512&width=580&height=552 512w,https://framerusercontent.com/images/UK1BvsLp3gztuzxhWrXcScozFA.png?width=580&height=552 580w"
+                            alt=""> <span>where you can take risks, speak openly,
+                            and finally feel confident to grow.</span>
+                    </p>
+
+                    <!-- small image -->
+                    <div class="about__image reveal">
+                        <img src="https://framerusercontent.com/images/u1x5JB4NvHFPKZRIjA0TIOTw.jpg?scale-down-to=512&width=1280&height=720"
+                            alt="student">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="preview reveal" id="platform">
+            <div class="container">
+
+                <!-- ROW 1 -->
+                <div class="preview__row row-1 reveal">
+                    <div class="preview-card">
+                        <img src="https://framerusercontent.com/images/I6JfDAFqOarbw1hOeBWAMxemg.png?scale-down-to=1024&lossless=1&width=2432&height=1469"
+                            alt="">
+                        <p><span class="title-rev">Learn anywhere, anytime</span>A seamless experience across all your
+                            devices.
+                            Switch between your laptop and smartphone without
+                            missing a beat.</p>
+                    </div>
+                </div>
+
+                <!-- ROW 2 -->
+                <div class="preview__row row-2 reveal">
+                    <div class="preview-card">
+                        <img src="https://framerusercontent.com/images/2SG8WRyfTn04f573KWDbRokra20.png?scale-down-to=512&width=1108&height=886"
+                            alt="">
+                        <p><span class="title-rev">Expert Feedback</span>JGet personalized guidance from real teachers.
+                            We don’t
+                            just grade your work; we help you improve all
+                            aspects of learning
+                            English.</p>
+                    </div>
+                    <div class="preview-card reveal">
+                        <img src="https://framerusercontent.com/images/66TZIvUpEkBMXuFJGWXtVtqAE5o.png?scale-down-to=512&width=2158&height=1594"
+                            alt="">
+                        <p><span class="title-rev">Interactive Live Lessons</span>Join real-time sessions with expert
+                            instructors and a community of motivated students. Practice
+                            English in a supportive,
+                            live environment.</p>
+                    </div>
+                </div>
+
+                <!-- ROW 3 -->
+                <div class="preview__row row-3 reveal">
+                    <div class="preview-card">
+                        <img src="https://framerusercontent.com/images/UIdaTLCtTFMQFevCcPiym04bBII.png?scale-down-to=512&width=674&height=478"
+                            alt="">
+                        <p><span class="title-rev">Tilu AI Tutor</span>Improve your pronunciation and fluency instantly.
+                            Our AI
+                            analyzes your speech and gives you immediate
+                            tips on how to
+                            sound more natura</p>
+                    </div>
+                    <div class="preview-card reveal">
+                        <img src="https://framerusercontent.com/images/rk9iGRy4XoRXMv9qT5Q3ISBBudk.png?scale-down-to=512&width=635&height=621"
+                            alt="">
+                        <p><span class="title-rev">Stay Motivated</span>Compete with friends, earn XP, and climb the
+                            ranks.
+                            Learning is more effective when you’re winning
+                            together.</p>
+                    </div>
+                    <div class="preview-card reveal">
+                        <img src="https://framerusercontent.com/images/ewcJgH8BGjOsoHA03hnlDVKAk.jpg?scale-down-to=512&width=2000&height=1414"
+                            alt="">
+                        <p><span class="title-rev">Get Certified</span>Earn an official certificate upon completion to
+                            showcase
+                            your progress. Plus, keep full platform
+                            access for an entire
+                            year.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="team reveal">
+
+            <div class="container">
+
+                <div class="team__top reveal">
+                    <span class="team_badge">👩‍💻 The team of professionals</span>
+                    <h2>Our dedicated team</h2>
+                    <p>
+                        Passionate helping the Tilu community and available daily to uplift our
+                        educational experience.
+                    </p>
+                </div>
+
+                <div class="team__wrapper">
+
+                    <!-- SIDEBAR -->
+                    <aside class="team__sidebar">
+
+                        <a href="#leadership" class="team__link active">
+                            Leadership
+                        </a>
+
+                        <a href="#academic" class="team__link">
+                            Academic
+                        </a>
+
+                        <a href="#supervisors" class="team__link">
+                            Supervisors
+                        </a>
+
+                        <a href="#support" class="team__link">
+                            Support
+                        </a>
+
+                        <a href="#teachers" class="team__link">
+                            Teachers
+                        </a>
+
+                    </aside>
+
+                    <!-- CONTENT -->
+                    <div class="team__content">
+
+                        <!-- BLOCK -->
+                        <div class="team__block" id="leadership">
+
+                            <div class="team__grid">
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Asselya A</h4>
+                                    <span>CEO</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Raigul A</h4>
+                                    <span>COO</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- BLOCK -->
+                        <div class="team__block" id="academic">
+
+                            <div class="team__grid">
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Nagima Y</h4>
+                                    <span>Head of Academic Department</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Betty</h4>
+                                    <span>Learning Designer</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Medina S</h4>
+                                    <span>Learning Designer</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- BLOCK -->
+                        <div class="team__block" id="supervisors">
+
+                            <div class="team__grid">
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Dani N</h4>
+                                    <span>English Supervisor</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Zhan B</h4>
+                                    <span>Senior Supervisor</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- BLOCK -->
+                        <div class="team__block" id="support">
+
+                            <div class="team__grid">
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Danial B</h4>
+                                    <span>Support Team</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Aika K</h4>
+                                    <span>Support Team</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- BLOCK -->
+                        <div class="team__block" id="teachers">
+
+                            <div class="team__grid">
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Zere K</h4>
+                                    <span>Teacher</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Aigerim Z</h4>
+                                    <span>Teacher</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                                <div class="member">
+                                    <img src="https://framerusercontent.com/images/fcpl1psFklJFAQhrQhtcn2wsU.png?scale-down-to=1024&width=1532&height=1576"
+                                        alt="">
+                                    <h4>Gauhar P</h4>
+                                    <span>Teacher</span>
+                                    <p>Nazarbaev University alumni</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="stories" id="stories">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="team_badge">🎯 We make results</span>
+                    <h2> Stories of our students</h2>
+                    <p>From leadership to the classroom, we collaborate daily to uphold our standards.</p>
+                </div>
+                <div class="row">
+
+                    <!-- LEFT -->
+                    <div class="col-md-3">
+                        <div class="nav flex-column nav-pills grey-box">
+
+                            <button class="nav-link active student-tab" data-bs-toggle="pill" data-bs-target="#s1">
+                                <img
+                                    src="https://framerusercontent.com/images/QFmcsM94IubGt3np1oQ2AMvJyg.png?scale-down-to=512&width=1592&height=1576">
+                                <div>
+                                    <strong>Aizhan B.</strong>
+                                    <small>Pre → Upper</small>
+                                </div>
+                            </button>
+
+                            <button class="nav-link student-tab" data-bs-toggle="pill" data-bs-target="#s2">
+                                <img
+                                    src="https://framerusercontent.com/images/QFmcsM94IubGt3np1oQ2AMvJyg.png?scale-down-to=512&width=1592&height=1576">
+                                <div>
+                                    <strong>Sogdiana B.</strong>
+                                    <small>Beginner → Upper</small>
+                                </div>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="col-md-9">
+                        <div class="tab-content">
+
+                            <div class="tab-pane fade show active" id="s1">
+                                <div class="row ">
+
+                                    <div class="col-md-6 reveal">
+                                        <div class="grey-box ">
+                                            <p>Пришла с уровнем Pre-Intermediate и целью сдать IELTS. Благодаря
+                                                системному
+                                                обучению
+                                                и
+                                                дисциплинированности Акжан
+                                                улучшила все свои навыки и сдала IELTS на 8 баллов.</p>
+                                        </div>
+                                        <div class="levels">
+                                            <div class="level">
+                                                <i class="icons ic-1"></i>
+                                                <div class="i-text">
+                                                    <span>Начальный уровень</span>
+                                                    <p>Pre-Intermediate</p>
+                                                </div>
+                                            </div>
+                                            <div class="level active">
+                                                <i class="icons ic-2"></i>
+                                                <div class="i-text">
+                                                    <span>После окончания</span>
+                                                    <p>Upper</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6 reveal">
+                                        <div class="video-box">
+                                            <iframe width="100%" height="100%"
+                                                src="https://www.youtube.com/embed/IsLtPbXq4gc?list=RDIsLtPbXq4gc"
+                                                title="Kalifarniya &amp; Kairat Nurtas - Ademi [Official Performance Video]"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <div class="levels">
+                                            <div class="level">
+                                                <i class="icons ic-1"></i>
+                                                <div class="i-text">
+                                                    <span>IELTS Score</span>
+                                                    <p>8.0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="s2">
+                                <p>7.5 нәтижеге жетті.</p>
+                            </div>
+
+                        </div>
+                        <div class="join-team reveal">
+
+                            <img src="https://framerusercontent.com/images/XhJnoCNv4yxK2IGFXV4Tjh32hw.png?scale-down-to=512&width=560&height=536"
+                                alt="">
+
+                            <h2>Join our Team</h2>
+
+                            <p>Become a part of our team</p>
+
+                            <a href="#">See open positions</a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL -->
+        <div id="videoModal" class="modal fade">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <iframe id="videoFrame" width="100%" height="400"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="reviews reveal">
+            <div class="container">
+
+                <div class="students-reviews__top">
+                    <h2>Other stories of our students</h2>
+                </div>
+
+                <div class="students-reviews__grid" id="reviewsGrid">
+
+                    <!-- CARD -->
+                    <div class="students-review-card reveal">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Zarina P.</h4>
+                                <span>Pre upper 06</span>
+                            </div>
+                        </div>
+
+                        <p>"Добрый день! Я очень рада, что прошла данный курс. Мне очень понравились уроки тем, что они
+                            очень
+                            разнообразные и
+                            охватывают все аспекты жизни. Я наконец-то научилась формировать свои мысли и уже лучше пишу
+                            эссе. Я
+                            считаю, что у меня
+                            есть прогресс, потому что по сравнению с первыми уроками я начала быстрее понимать текст и
+                            речь на
+                            английском,
+                            автоматически переводится у меня в голове😊 Особенно мне понравилось работать вместе с моим
+                            преподавателем — Гаухар! Это
+                            лучший преподаватель английского, который у меня был. Спасибо вам большое! 😍💕"
+                        </p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="students-review-card reveal">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Aynur B.</h4>
+                                <span>IELTS Group 03</span>
+                            </div>
+                        </div>
+
+                        <p>"Здравствуйте, курс в целом изменил мнение об IELTS курсах. Очень основательный,
+                            систематичный, так
+                            мозг не нагружаясь
+                            воспринимает информацию на платформе один за другим. Особенно понравились topic-related
+                            vocabulary,
+                            которые полезны во
+                            всех секциях. Огромная благодарность всей команде: преподавателям, менеджерам🥰. Приятно
+                            было
+                            поработать/позаниматься с
+                            вами в течении 3 месяцев 🤍"
+                        </p>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="students-review-card reveal">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Zarina U.</h4>
+                                <span>IELTS Pair 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Сейчас у нас уроки открываются раз в два дня по одному уроку.
+                            Всё идет очень хорошо...
+                        </p>
+                    </div>
+
+
+                    <!-- HIDDEN CARDS -->
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ardak H.</h4>
+                                <span>Pre Upper 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Курс өте ұнады. Мұғалімдер әрқашан көмектесіп отырды.
+                        </p>
+                    </div>
+
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ardak H.</h4>
+                                <span>Pre Upper 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Курс өте ұнады. Мұғалімдер әрқашан көмектесіп отырды.
+                        </p>
+                    </div>
+
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ardak H.</h4>
+                                <span>Pre Upper 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Курс өте ұнады. Мұғалімдер әрқашан көмектесіп отырды.
+                        </p>
+                    </div>
+
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ardak H.</h4>
+                                <span>Pre Upper 02</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            Курс өте ұнады. Мұғалімдер әрқашан көмектесіп отырды.
+                        </p>
+                    </div>
+
+                    <div class="students-review-card hidden-review">
+                        <div class="students-review-user">
+                            <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                                alt="">
+                            <div>
+                                <h4>Ayna K.</h4>
+                                <span>Pre Intermediate</span>
+                            </div>
+                        </div>
+
+                        <p>
+                            IELTS дайындық өте күшті өтті. Нәтижем айтарлықтай өсті.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- BOTTOM BADGE -->
+                <div class="students-reviews__bottom">
+                    <div class="students">
+                        <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/QFmcsM94IubGt3np1oQ2AMvJyg.png?scale-down-to=512&width=1592&height=1576"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                            alt="">
+                        <img src="https://framerusercontent.com/images/CMpFczYdYgWNm99vIjpkZF9933U.jpg?scale-down-to=1024&width=967&height=1280"
+                            alt="">
+                    </div>
+
+                    <p>10,000+ students loved Tilu</p>
+
+                    <button id="showMoreBtn">See more →</button>
+
+                    <script>
+                        const showMoreBtn = document.getElementById("showMoreBtn");
+                        const hiddenReviews = document.querySelectorAll(".hidden-review");
+                        const reviewsGrid = document.getElementById("reviewsGrid");
+
+                        let expanded = false;
+
+                        showMoreBtn.addEventListener("click", () => {
+
+                            expanded = !expanded;
+
+                            reviewsGrid.classList.toggle("expanded");
+
+                            hiddenReviews.forEach((card, index) => {
+
+                                setTimeout(() => {
+
+                                    if (expanded) {
+                                        card.classList.add("show-review");
+                                    } else {
+                                        card.classList.remove("show-review");
+                                    }
+
+                                }, index * 120);
+
+                            });
+
+                            showMoreBtn.innerText = expanded
+                                ? "Hide reviews"
+                                : "See more →";
+
+                        });
+                    </script>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="journey-section reveal">
+
+            <div class="journey-section__box">
+
+                <!-- TOP CARDS -->
+                <div class="journey-section__cards reveal">
+
+                    <div class="journey-card">
+                        <img src="https://framerusercontent.com/images/NbYnPKcJU6jnDnZNpzELCjLAk.png?width=1440&height=1363"
+                            alt="">
+                        <span>Guest from Stanford</span>
+                    </div>
+
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/eET0Fa0I14kCLn7EyagGIDLp610.png?width=1040&height=732"
+                            alt="">
+                        <span>Graduation superstars</span>
+                    </div>
+
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/BNg8wWkrkoKhnxk0ByYxBhYqo.png?width=524&height=458"
+                            alt="">
+                        <span>Tilu Team 🥰</span>
+                    </div>
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/mFu7NsP6f4FaTllkVL2P0bAMvo.png?width=1440&height=1919"
+                            alt="">
+                        <span>Guest from Stanford</span>
+                    </div>
+
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/tHG2ITkTf4xMEtP0ThRv4qCVPVY.png?width=640&height=660"
+                            alt="">
+                        <span>Graduation superstars</span>
+                    </div>
+
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/BNg8wWkrkoKhnxk0ByYxBhYqo.png?width=524&height=458"
+                            alt="">
+                        <span>Tilu Team 🥰</span>
+                    </div>
+                    <div class="journey-card reveal">
+                        <img src="https://framerusercontent.com/images/BNg8wWkrkoKhnxk0ByYxBhYqo.png?width=524&height=458"
+                            alt="">
+                        <span>Graduation 2026</span>
+                    </div>
+
+                </div>
+
+                <!-- CONTENT -->
+                <div class="journey-section__content reveal">
+
+                    <h2>Ready to get started</h2>
+
+                    <p>
+                        Start your learning journey with Tilu
+                    </p>
+
+                    <button>Contact Us</button>
+
+                </div>
+
+            </div>
+
+            <!-- DARK PART -->
+            <div class="journey-section__dark"></div>
+
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__top">
+
+                <!-- LEFT -->
+                <div class="footer__left">
+
+                    <img src="assets/image/logo.svg" alt="Tilu">
+
+                    <p>
+                        Онлайн-школа английского языка Асель Амангелды.
+                        <br>
+                        ИП Асел Амангелды, ИИН 980519400566
+                        Казахстан, 010000,
+                        <br>
+                        г. Астана, район Есиль, ул. Достык, д.18
+                        +77002077117
+                    </p>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="footer__right">
+
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Blog</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+
+                <span>© 2025 — All rights reserved.</span>
+
+                <a href="#">Privacy policy</a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>
