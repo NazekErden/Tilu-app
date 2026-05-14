@@ -421,10 +421,33 @@
                             and finally feel confident to grow.</span>
                     </p>
 
-                    <!-- small image -->
-                    <div class="about__image reveal">
-                        <img src="https://framerusercontent.com/images/u1x5JB4NvHFPKZRIjA0TIOTw.jpg?scale-down-to=512&width=1280&height=720"
-                            alt="student">
+                    <!-- small image / video -->
+                    <div class="about__video reveal">
+
+                        <!-- preview -->
+                        <div class="about__video-preview" id="videoPreview">
+                            <img src="https://framerusercontent.com/images/u1x5JB4NvHFPKZRIjA0TIOTw.jpg?scale-down-to=512&width=1280&height=720"
+                                alt="student">
+
+                            <!-- dark overlay -->
+                            <div class="about__video-overlay">
+                                <div class="about__play">
+                                    ▶
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- modal -->
+                        <div class="about__modal" id="videoModal">
+                            <div class="about__modal-close" id="closeVideo">
+                                ✕
+                            </div>
+
+                            <iframe src="https://www.youtube.com/embed/5LKoGPQQ5SM?autoplay=1" title="Youtube video"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                            </iframe>
+                        </div>
+
                     </div>
 
                 </div>
@@ -438,8 +461,7 @@
                 <!-- ROW 1 -->
                 <div class="preview__row row-1 reveal">
                     <div class="preview-card">
-                        <img src="https://framerusercontent.com/images/I6JfDAFqOarbw1hOeBWAMxemg.png?scale-down-to=1024&lossless=1&width=2432&height=1469"
-                            alt="">
+                        <img src="assets/image/card1.png" alt="">
                         <p><span class="title-rev">Learn anywhere, anytime</span>A seamless experience across all your
                             devices.
                             Switch between your laptop and smartphone without
@@ -459,8 +481,7 @@
                             English.</p>
                     </div>
                     <div class="preview-card reveal">
-                        <img src="https://framerusercontent.com/images/66TZIvUpEkBMXuFJGWXtVtqAE5o.png?scale-down-to=512&width=2158&height=1594"
-                            alt="">
+                        <img src="assets/image/card2.png" alt="">
                         <p><span class="title-rev">Interactive Live Lessons</span>Join real-time sessions with expert
                             instructors and a community of motivated students. Practice
                             English in a supportive,
@@ -519,23 +540,59 @@
                     <!-- SIDEBAR -->
                     <aside class="team__sidebar">
 
-                        <a href="#leadership" class="team__link active">
+                        <a href="#leadership" class="team__link">
+                            <!-- <i class="icons ic-l"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                            </svg>
                             Leadership
                         </a>
 
                         <a href="#academic" class="team__link">
+                            <!-- <i class="icons ic-a"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
+                                <path
+                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
+                            </svg>
                             Academic
                         </a>
 
                         <a href="#supervisors" class="team__link">
+                            <!-- <i class="icons ic-s"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-file-medical" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z" />
+                                <path
+                                    d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1" />
+                            </svg>
                             Supervisors
                         </a>
 
                         <a href="#support" class="team__link">
+                            <!-- <i class="icons ic-sp"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bag-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+                            </svg>
                             Support
                         </a>
 
                         <a href="#teachers" class="team__link">
+                            <!-- <i class="icons ic-t"></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-video3" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2" />
+                                <path
+                                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783Q16 12.312 16 12V4a2 2 0 0 0-2-2z" />
+                            </svg>
                             Teachers
                         </a>
 
@@ -774,7 +831,7 @@
                                         </div>
                                         <div class="levels">
                                             <div class="level">
-                                                <i class="icons ic-1"></i>
+                                                <i class="icons ic-3"></i>
                                                 <div class="i-text">
                                                     <span>IELTS Score</span>
                                                     <p>8.0</p>

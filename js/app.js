@@ -58,38 +58,8 @@ window.addEventListener("scroll", function () {
     }
 
 });
-const sections = document.querySelectorAll(".team__block");
-const navLinks = document.querySelectorAll(".team__link");
 
-window.addEventListener("scroll", () => {
 
-    let currentSection = "";
-
-    sections.forEach(section => {
-
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if (
-            window.scrollY >= sectionTop - 200 &&
-            window.scrollY < sectionTop + sectionHeight - 200
-        ) {
-            currentSection = section.getAttribute("id");
-        }
-
-    });
-
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === `#${currentSection}`) {
-            link.classList.add("active");
-        }
-
-    });
-
-});
 
 const reveals = document.querySelectorAll(".reveal");
 
@@ -115,4 +85,52 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach((item) => {
     observer.observe(item);
+});
+
+const videoPreview = document.getElementById('videoPreview');
+const videoModal = document.getElementById('videoModal');
+const closeVideo = document.getElementById('closeVideo');
+
+videoPreview.addEventListener('click', () => {
+    videoModal.classList.add('active');
+});
+
+closeVideo.addEventListener('click', () => {
+    videoModal.classList.remove('active');
+});
+
+/* close when clicking outside */
+videoModal.addEventListener('click', (e) => {
+    if (e.target === videoModal) {
+        videoModal.classList.remove('active');
+    }
+});
+
+const sections = document.querySelectorAll(".team__block");
+const navLinks = document.querySelectorAll(".team__link");
+
+window.addEventListener("scroll", () => {
+
+    let currentSection = "";
+
+    sections.forEach(section => {
+
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top <= 200 && rect.bottom >= 200) {
+            currentSection = section.id;
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+        }
+
+    });
+
 });
