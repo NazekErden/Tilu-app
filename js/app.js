@@ -58,8 +58,38 @@ window.addEventListener("scroll", function () {
     }
 
 });
+const sections = document.querySelectorAll(".team__block");
+const navLinks = document.querySelectorAll(".team__link");
 
+window.addEventListener("scroll", () => {
 
+    let currentSection = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (
+            window.scrollY >= sectionTop - 200 &&
+            window.scrollY < sectionTop + sectionHeight - 200
+        ) {
+            currentSection = section.getAttribute("id");
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
 
 const reveals = document.querySelectorAll(".reveal");
 
@@ -106,31 +136,28 @@ videoModal.addEventListener('click', (e) => {
     }
 });
 
-const sections = document.querySelectorAll(".team__block");
-const navLinks = document.querySelectorAll(".team__link");
+const aboutTexts = document.querySelectorAll('.about__text.reveal');
 
-window.addEventListener("scroll", () => {
+const textObserver = new IntersectionObserver((entries) => {
 
-    let currentSection = "";
+    entries.forEach((entry) => {
 
-    sections.forEach(section => {
+        if (entry.isIntersecting) {
 
-        const rect = section.getBoundingClientRect();
+            entry.target.classList.add('active-reveal');
 
-        if (rect.top <= 200 && rect.bottom >= 200) {
-            currentSection = section.id;
+        } else {
+
+            entry.target.classList.remove('active-reveal');
+
         }
 
     });
 
-    navLinks.forEach(link => {
+}, {
+    threshold: 0.2
+});
 
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === `#${currentSection}`) {
-            link.classList.add("active");
-        }
-
-    });
-
+aboutTexts.forEach((item) => {
+    textObserver.observe(item);
 });
